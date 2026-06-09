@@ -1,0 +1,376 @@
+/* Kleurenpalet op basis van requirements.md */
+:root {
+    --primary-color: #BE3E1D;
+    --secondary-color: #212529;
+    --light-bg: #f8f9fa;
+    --text-color: #333;
+    --light-text: #fff;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header */
+header {
+    background: var(--secondary-color);
+    color: var(--light-text);
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+header h1 span {
+    color: var(--primary-color);
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav a {
+    color: var(--light-text);
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+header nav a:hover {
+    color: var(--primary-color);
+}
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('afbeeldingen/2019_06_01_erwin_geels_1.jpg') no-repeat center center/cover;
+    height: 60vh;
+    color: var(--light-text);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+#hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--primary-color);
+    color: var(--light-text);
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #a33519;
+}
+
+/* Sections */
+.section {
+    padding: 60px 0;
+}
+
+.bg-light {
+    background: var(--light-bg);
+}
+
+.bg-dark {
+    background: var(--secondary-color);
+}
+
+.text-light {
+    color: var(--light-text);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 2rem;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h2::after {
+    content: '';
+    background: var(--primary-color);
+    height: 3px;
+    width: 50px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Grid & Cards */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.card {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.card h3 {
+    margin-bottom: 15px;
+    color: var(--primary-color);
+}
+
+/* Specs */
+.spec-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+
+.spec-grid ul {
+    list-style: none;
+}
+
+.spec-grid ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.spec-image img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Tarieven */
+.price-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.price-box {
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    text-align: center;
+    flex: 1;
+    min-width: 250px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.price-box.featured {
+    border: 2px solid var(--primary-color);
+    transform: scale(1.05);
+}
+
+.price-box h3 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+}
+
+.price {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.price-box .detail {
+    font-size: 0.85rem;
+    color: #666;
+    margin-top: 5px;
+}
+
+.practical-info {
+    max-width: 800px;
+    margin: 20px auto 0;
+    text-align: center;
+    background: #e9ecef;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 0.95rem;
+}
+
+.disclaimer {
+    text-align: center;
+    margin-top: 30px;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
+/* Contact */
+.contact-info {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.contact-info a {
+    color: var(--light-text);
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.contact-info a:hover {
+    color: var(--primary-color);
+}
+
+.cta-container {
+    text-align: center;
+}
+
+.btn-whatsapp {
+    background-color: #25D366;
+}
+
+.btn-whatsapp:hover {
+    background-color: #128C7E;
+}
+
+.whatsapp-sticky {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    z-index: 1001;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.whatsapp-sticky:hover {
+    transform: scale(1.1);
+    background-color: #128C7E;
+}
+
+.faq-grid {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-item {
+    margin-bottom: 25px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.faq-item h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+.cta-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Footer */
+footer {
+    background: #111;
+    color: #888;
+    padding: 30px 0;
+    text-align: center;
+}
+
+footer nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+footer nav ul li {
+    margin: 0 10px;
+}
+
+footer nav a {
+    color: #888;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+footer nav a:hover {
+    color: var(--light-text);
+}
+
+/* Mobiele Responsiviteit */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    header nav {
+        margin-top: 15px;
+    }
+
+    header nav ul li {
+        margin: 0 10px;
+    }
+
+    #hero h2 {
+        font-size: 1.8rem;
+    }
+
+    .spec-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .price-box.featured {
+        transform: scale(1);
+    }
+}
