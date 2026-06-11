@@ -37,10 +37,13 @@ Per dag 185.--
 
 per week 500.--
 
-Halen en brengen 50.--
+Halen en brengen 50.-- (enkel binnen de regio Zuidwest-Friesland)
 
 Prijzen zijn excl brandstof kosten en btw.
 
+Eigen risico 800
+
 # Video 
 
+https://www.youtube.com/watch?v=ahzUyCB9Oyw
 https://www.youtube.com/watch?v=ahzUyCB9Oyw
